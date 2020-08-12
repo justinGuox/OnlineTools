@@ -1,0 +1,92 @@
+/* 头部样式 */
+#header {
+  width: 100%;
+  background-color: white;
+  height: 58px;
+}
+#header .navbar {
+  position: fixed;
+  width: 1220px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+#header .navbar .navbar-toggle {
+  position: fixed;
+  right: 0;
+}
+#header .navbar .navbar-brand {
+  background-image: url('../../src/assets/logo.png');
+  width: 140px;
+  height: 56px;
+  background-size: 140px 56px;
+}
+#header .navbar .container-fluid .navbar-collapse ul li a:before {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  bottom: 0px;
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: #ed6d00;
+  content: "";
+  transform: scale3d(0, 1, 1);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+#header .navbar .container-fluid .navbar-collapse ul li:hover a:before {
+  transform: scale3d(1, 1, 1);
+  color: #ed6d00;
+}
+/* 头部样式结束 */
+#content {
+  position: fixed;
+  width: 1220px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: orange;
+}
+#footer {
+  position: fixed;
+  width: 1220px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#footer .container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#footer .container .blogroll {
+  padding: 20px;
+  color: #6b7386;
+  background-color: white;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+}
+#footer .container .blogroll .col-md-1 {
+  padding-right: 3px;
+  cursor: default;
+}
+#footer .container .blogroll a {
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 16px;
+}
+#footer .container .blogroll a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: #878787;
+  cursor: pointer;
+}
+#footer .container .footer-copyright {
+  font-size: 12px;
+  color: #6b7386;
+}
